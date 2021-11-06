@@ -87,15 +87,15 @@ public class MainActivity extends AppCompatActivity implements FrameProcessor {
         bottomSheetRecyclerView = findViewById(R.id.bottom_sheet_button_recyclerView);
 
         //setup our cameraview from library
-        faceDetectionCameraView.setFacing(cameraFacing);
-        faceDetectionCameraView.setLifecycleOwner(MainActivity.this);
-        faceDetectionCameraView.addFrameProcessor(MainActivity.this);
+       // faceDetectionCameraView.setFacing(cameraFacing);
+      //  faceDetectionCameraView.setLifecycleOwner(MainActivity.this);
+      //  faceDetectionCameraView.addFrameProcessor(MainActivity.this);
 
         toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 cameraFacing=(cameraFacing == Facing.FRONT) ? Facing.BACK : Facing.FRONT;
-                faceDetectionCameraView.setFacing(cameraFacing);
+              //  faceDetectionCameraView.setFacing(cameraFacing);
             }
         });
 
